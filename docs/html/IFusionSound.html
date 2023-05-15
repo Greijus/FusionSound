@@ -1,0 +1,131 @@
+<HTML>
+<STYLE>
+  <!--
+    A{textdecoration:none}
+  -->
+</STYLE>
+<STYLE type="text/css">
+  A:link, A:visited, A:active { text-decoration: none; }
+</STYLE>
+<HEAD>
+  <TITLE>IFusionSound [FusionSound Reference Manual]</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF link=#0070FF vlink=#0070FF text=#404040>
+
+<TABLE width=100% bgcolor=black border=0 cellspacing=1 cellpadding=3>
+  <TR><TD width=30%>
+    <A href="http://www.directfb.org"><IMG border=0 src="directfb.png"></A>
+  </TD><TD align=right>
+    &nbsp;&nbsp;    <A href="index.html"><FONT size=+3 color=white>Reference Manual - 1.1.1</FONT></A>
+  </TD></TR>
+  <TR><TD colspan=2 align=center bgcolor=#303030>
+    <TABLE border=0 cellspacing=0 cellpadding=0>
+      <TR><TD nowrap align=right width=50%>
+        <BIG><A href="index.html"><FONT color=#DDDDDD>FusionSound Interfaces</FONT></A>&nbsp;</BIG>
+      </TD><TD nowrap align=left width=50%>
+        <BIG><FONT color=orange>&nbsp;IFusionSound</FONT></BIG>
+      </TD></TR>
+    </TABLE>
+  </TD></TR>
+</TABLE>
+
+<p style="margin-left:3%; margin-right:3%;">      <i><b>IFusionSound</b></i> is the main FusionSound interface. 
+      It can be retrieved either by calling <i><a href="IDirectFB_GetInterface.html">IDirectFB::GetInterface()</a></i> or
+      by calling <i>FusionSoundCreate()</i> (after <i>FusionSoundInit()</i>).
+    <br><br>
+      <b>Static sound buffers</b> for smaller samples like sound effects in
+      games or audible feedback in user interfaces are created by calling
+      <i>CreateBuffer()</i>. They can be played several times with an unlimited
+      number of <b>concurrent playbacks</b>. Playback can be started in
+      <b>looping</b> mode. Other per-playback control includes <b>pan value</b>,
+      <b>volume level</b> and <b>pitch</b>.
+    <br><br>
+      <b>Streaming sound buffers</b> for large or compressed files and for
+      streaming of real time sound data are created by calling
+      <i>CreateStream()</i>. There's only one <b>single playback</b> that
+      automatically starts when data is written to the <b>ring buffer</b> for the
+      first time. If the buffer underruns, the playback automatically stops and
+      continues when the ring buffer is written to again.
+    <br><br>
+</p><P>
+  <CENTER><TABLE width=93% border=1 rules=groups cellpadding=2 cellspacing=0>
+    <THEAD>
+      <TR><TH colspan=3>Methods of IFusionSound</TH></TR>
+    </THEAD>
+    <TBODY>
+    <TR><TD valign=top>
+      <B><SMALL>Information </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_GetDeviceDescription.html">      <B>GetDeviceDescription</B></A>
+    </TD><TD valign=top>
+       Get a description of the sound device.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL>Buffers </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_CreateBuffer.html">      <B>CreateBuffer</B></A>
+    </TD><TD valign=top>
+       Create a static sound buffer.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_CreateStream.html">      <B>CreateStream</B></A>
+    </TD><TD valign=top>
+       Create a streaming sound buffer.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_CreateMusicProvider.html">      <B>CreateMusicProvider</B></A>
+    </TD><TD valign=top>
+       Create a music provider.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL>Volume Control </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_GetMasterVolume.html">      <B>GetMasterVolume</B></A>
+    </TD><TD valign=top>
+       Get master volume level.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_SetMasterVolume.html">      <B>SetMasterVolume</B></A>
+    </TD><TD valign=top>
+       Set master volume level.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_GetLocalVolume.html">      <B>GetLocalVolume</B></A>
+    </TD><TD valign=top>
+       Get local volume level.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_SetLocalVolume.html">      <B>SetLocalVolume</B></A>
+    </TD><TD valign=top>
+       Set local volume level.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL>Misc </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_Suspend.html">      <B>Suspend</B></A>
+    </TD><TD valign=top>
+       Suspend FusionSound.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSound_Resume.html">      <B>Resume</B></A>
+    </TD><TD valign=top>
+       Resume FusionSound.
+    </TD></TR>
+    </TBODY>
+  </TABLE></CENTER>
+</P>
+
+</BODY>
+</HTML>

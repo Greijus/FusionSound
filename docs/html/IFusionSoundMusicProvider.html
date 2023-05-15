@@ -1,0 +1,156 @@
+<HTML>
+<STYLE>
+  <!--
+    A{textdecoration:none}
+  -->
+</STYLE>
+<STYLE type="text/css">
+  A:link, A:visited, A:active { text-decoration: none; }
+</STYLE>
+<HEAD>
+  <TITLE>IFusionSoundMusicProvider [FusionSound Reference Manual]</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF link=#0070FF vlink=#0070FF text=#404040>
+
+<TABLE width=100% bgcolor=black border=0 cellspacing=1 cellpadding=3>
+  <TR><TD width=30%>
+    <A href="http://www.directfb.org"><IMG border=0 src="directfb.png"></A>
+  </TD><TD align=right>
+    &nbsp;&nbsp;    <A href="index.html"><FONT size=+3 color=white>Reference Manual - 1.1.1</FONT></A>
+  </TD></TR>
+  <TR><TD colspan=2 align=center bgcolor=#303030>
+    <TABLE border=0 cellspacing=0 cellpadding=0>
+      <TR><TD nowrap align=right width=50%>
+        <BIG><A href="index.html"><FONT color=#DDDDDD>FusionSound Interfaces</FONT></A>&nbsp;</BIG>
+      </TD><TD nowrap align=left width=50%>
+        <BIG><FONT color=orange>&nbsp;IFusionSoundMusicProvider</FONT></BIG>
+      </TD></TR>
+    </TABLE>
+  </TD></TR>
+</TABLE>
+
+<p style="margin-left:3%; margin-right:3%;">      <i>No summary yet...</i>
+</p><P>
+  <CENTER><TABLE width=93% border=1 rules=groups cellpadding=2 cellspacing=0>
+    <THEAD>
+      <TR><TH colspan=3>Methods of IFusionSoundMusicProvider</TH></TR>
+    </THEAD>
+    <TBODY>
+    <TR><TD valign=top>
+      <B><SMALL>Retrieving information </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_GetCapabilities.html">      <B>GetCapabilities</B></A>
+    </TD><TD valign=top>
+       Retrieve information about the music provider's capabilities.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_EnumTracks.html">      <B>EnumTracks</B></A>
+    </TD><TD valign=top>
+       Enumerate all tracks contained in the file.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_GetTrackID.html">      <B>GetTrackID</B></A>
+    </TD><TD valign=top>
+       Get the unique ID of the current track.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_GetTrackDescription.html">      <B>GetTrackDescription</B></A>
+    </TD><TD valign=top>
+       Get a description of the current track.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_GetStreamDescription.html">      <B>GetStreamDescription</B></A>
+    </TD><TD valign=top>
+       Get a stream description that best matches the music contained in the file.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_GetBufferDescription.html">      <B>GetBufferDescription</B></A>
+    </TD><TD valign=top>
+       Get a buffer description that best matches the music contained in the file.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL>Playback </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_SelectTrack.html">      <B>SelectTrack</B></A>
+    </TD><TD valign=top>
+       Select a track by its unique ID.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_PlayToStream.html">      <B>PlayToStream</B></A>
+    </TD><TD valign=top>
+       Play selected track rendering it into the destination stream.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_PlayToBuffer.html">      <B>PlayToBuffer</B></A>
+    </TD><TD valign=top>
+       Play selected track rendering it into the destination buffer.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_Stop.html">      <B>Stop</B></A>
+    </TD><TD valign=top>
+       Stop playback.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_GetStatus.html">      <B>GetStatus</B></A>
+    </TD><TD valign=top>
+       Get playback status.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL>Media Control </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_SeekTo.html">      <B>SeekTo</B></A>
+    </TD><TD valign=top>
+       Seeks to a position within the current track.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_GetPos.html">      <B>GetPos</B></A>
+    </TD><TD valign=top>
+       Gets current position within the current track.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_GetLength.html">      <B>GetLength</B></A>
+    </TD><TD valign=top>
+       Gets the length of the current track.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL>Advanced Playback </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_SetPlaybackFlags.html">      <B>SetPlaybackFlags</B></A>
+    </TD><TD valign=top>
+       Set the flags controlling playback.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundMusicProvider_WaitStatus.html">      <B>WaitStatus</B></A>
+    </TD><TD valign=top>
+       Wait for playback status.
+    </TD></TR>
+    </TBODY>
+  </TABLE></CENTER>
+</P>
+
+</BODY>
+</HTML>

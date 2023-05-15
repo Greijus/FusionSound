@@ -1,0 +1,83 @@
+<HTML>
+<STYLE>
+  <!--
+    A{textdecoration:none}
+  -->
+</STYLE>
+<STYLE type="text/css">
+  A:link, A:visited, A:active { text-decoration: none; }
+</STYLE>
+<HEAD>
+  <TITLE>IFusionSoundStream - GetStatus [FusionSound Reference Manual]</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF link=#0070FF vlink=#0070FF text=#404040>
+
+<TABLE width=100% bgcolor=black border=0 cellspacing=1 cellpadding=3>
+  <TR><TD width=30%>
+    <A href="http://www.directfb.org"><IMG border=0 src="directfb.png"></A>
+  </TD><TD align=right>
+    &nbsp;&nbsp;    <A href="index.html"><FONT size=+3 color=white>Reference Manual - 1.1.1</FONT></A>
+  </TD></TR>
+  <TR><TD colspan=2 align=center bgcolor=#303030>
+    <TABLE border=0 cellspacing=0 cellpadding=0>
+      <TR><TD nowrap align=right width=50%>
+        <BIG><A href="IFusionSoundStream.html"><FONT color=#DDDDDD>IFusionSoundStream</FONT></A>&nbsp;</BIG>
+      </TD><TD nowrap align=left width=50%>
+        <BIG><FONT color=orange>&nbsp;GetStatus</FONT></BIG>
+      </TD></TR>
+    </TABLE>
+  </TD></TR>
+</TABLE>
+
+<P> Query ring buffer status.</P><P>
+  <TABLE border=0 cellspacing=0 cellpadding=2 bgcolor=#C0C0C0>
+    <TR><TD colspan=5><I><FONT color=black>GetStatus (</FONT></I></TD></TR>
+    <TR><TD width=50>&nbsp;</TD><TD valign=top>
+      <A href="IFusionSoundStream.html">IFusionSoundStream</A>
+    </TD><TD width=20>&nbsp;</TD><TD align=right>
+      <FONT color=black><B>*</B></FONT>
+    </TD><TD valign=top>
+      <FONT color=black><B>thiz,</B></FONT>
+    </TD></TR>
+    <TR><TD width=50>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD width=20>&nbsp;</TD><TD align=right>
+      <FONT color=black><B>*</B></FONT>
+    </TD><TD valign=top>
+      <FONT color=black><B>filled,</B></FONT>
+    </TD></TR>
+    <TR><TD width=50>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD width=20>&nbsp;</TD><TD align=right>
+      <FONT color=black><B>*</B></FONT>
+    </TD><TD valign=top>
+      <FONT color=black><B>total,</B></FONT>
+    </TD></TR>
+    <TR><TD width=50>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD width=20>&nbsp;</TD><TD align=right>
+      <FONT color=black><B>*</B></FONT>
+    </TD><TD valign=top>
+      <FONT color=black><B>read_position,</B></FONT>
+    </TD></TR>
+    <TR><TD width=50>&nbsp;</TD><TD valign=top>
+      int
+    </TD><TD width=20>&nbsp;</TD><TD align=right>
+      <FONT color=black><B>*</B></FONT>
+    </TD><TD valign=top>
+      <FONT color=black><B>write_position,</B></FONT>
+    </TD></TR>
+    <TR><TD width=50>&nbsp;</TD><TD valign=top>
+      DFBBoolean
+    </TD><TD width=20>&nbsp;</TD><TD align=right>
+      <FONT color=black><B>*</B></FONT>
+    </TD><TD valign=top>
+      <FONT color=black><B>playing</B></FONT>
+    </TD></TR>
+    <TR><TD colspan=3><I><FONT color=black>);</FONT></I></TD></TR>
+  </TABLE>
+</P>
+<P> Returns the number of samples the ring buffer is <b>filled</b> with, the <b>total</b> number of samples that can be stored (buffer size), current <b>read_position</b> and <b>write_position</b> and if the stream is <b>playing</b>. </P><P> Simply pass NULL for values that are not of interest.</P>
+
+</BODY>
+</HTML>

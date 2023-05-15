@@ -1,0 +1,129 @@
+<HTML>
+<STYLE>
+  <!--
+    A{textdecoration:none}
+  -->
+</STYLE>
+<STYLE type="text/css">
+  A:link, A:visited, A:active { text-decoration: none; }
+</STYLE>
+<HEAD>
+  <TITLE>IFusionSoundPlayback [FusionSound Reference Manual]</TITLE>
+</HEAD>
+<BODY bgcolor=#FFFFFF link=#0070FF vlink=#0070FF text=#404040>
+
+<TABLE width=100% bgcolor=black border=0 cellspacing=1 cellpadding=3>
+  <TR><TD width=30%>
+    <A href="http://www.directfb.org"><IMG border=0 src="directfb.png"></A>
+  </TD><TD align=right>
+    &nbsp;&nbsp;    <A href="index.html"><FONT size=+3 color=white>Reference Manual - 1.1.1</FONT></A>
+  </TD></TR>
+  <TR><TD colspan=2 align=center bgcolor=#303030>
+    <TABLE border=0 cellspacing=0 cellpadding=0>
+      <TR><TD nowrap align=right width=50%>
+        <BIG><A href="index.html"><FONT color=#DDDDDD>FusionSound Interfaces</FONT></A>&nbsp;</BIG>
+      </TD><TD nowrap align=left width=50%>
+        <BIG><FONT color=orange>&nbsp;IFusionSoundPlayback</FONT></BIG>
+      </TD></TR>
+    </TABLE>
+  </TD></TR>
+</TABLE>
+
+<p style="margin-left:3%; margin-right:3%;">      <i><b>IFusionSoundPlayback</b></i> represents one concurrent playback and
+      provides full control over the internal processing of samples.
+    <br><br>
+      <b>Commands</b> control the playback as in terms of tape transportation.
+      This includes <b>starting</b> the playback at <b>any position</b> with an
+      optional <b>stop position</b>. The default value of <b>zero</b> causes the
+      playback to stop at the <b>end</b>. A <b>negative</b> value puts the playback
+      in <b>looping</b> mode. <i>Start()</i> does <b>seeking</b> if the playback is
+      already running and updates the stop position. Other methods provide
+      <b>pausing</b>, <b>stopping</b> and <b>waiting</b> for the playback to end.
+    <br><br>
+      <b>Information</b> provided by <i>GetStatus()</i> includes the current
+      <b>position</b> and whether the playback is <b>running</b>.
+    <br><br>
+      <b>Parameters</b> provide <b>live</b> control over <b>volume</b>, <b>pan</b>,
+      <b>pitch</b> (speed factor) and <b>direction</b> of the playback.
+</p><P>
+  <CENTER><TABLE width=93% border=1 rules=groups cellpadding=2 cellspacing=0>
+    <THEAD>
+      <TR><TH colspan=3>Methods of IFusionSoundPlayback</TH></TR>
+    </THEAD>
+    <TBODY>
+    <TR><TD valign=top>
+      <B><SMALL>Commands </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_Start.html">      <B>Start</B></A>
+    </TD><TD valign=top>
+       Start playback of the buffer.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_Stop.html">      <B>Stop</B></A>
+    </TD><TD valign=top>
+       Stop playback of the buffer.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_Continue.html">      <B>Continue</B></A>
+    </TD><TD valign=top>
+       Continue playback of the buffer or start playback of a stream.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_Wait.html">      <B>Wait</B></A>
+    </TD><TD valign=top>
+       Wait until playback of the buffer has finished.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL>Information </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_GetStatus.html">      <B>GetStatus</B></A>
+    </TD><TD valign=top>
+       Get the current playback status.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL>Parameters </SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_SetVolume.html">      <B>SetVolume</B></A>
+    </TD><TD valign=top>
+       Set volume level.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_SetPan.html">      <B>SetPan</B></A>
+    </TD><TD valign=top>
+       Set panning value.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_SetPitch.html">      <B>SetPitch</B></A>
+    </TD><TD valign=top>
+       Set pitch value.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_SetDirection.html">      <B>SetDirection</B></A>
+    </TD><TD valign=top>
+       Set the direction of the playback.
+    </TD></TR>
+    <TR><TD valign=top>
+      <B><SMALL></SMALL></B>
+    </TD><TD valign=top>
+      <A href="IFusionSoundPlayback_SetDownmixLevels.html">      <B>SetDownmixLevels</B></A>
+    </TD><TD valign=top>
+       Set the volume levels for downmixing.
+    </TD></TR>
+    </TBODY>
+  </TABLE></CENTER>
+</P>
+
+</BODY>
+</HTML>
